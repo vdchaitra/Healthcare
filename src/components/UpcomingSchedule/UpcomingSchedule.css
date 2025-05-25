@@ -1,0 +1,40 @@
+.upcoming-schedule {
+  background-color: #eef4f82e;
+  border-radius: 12px;
+
+  padding: 0px 20px;
+}
+
+.schedule-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #171163;
+  margin: 0 0 20px 0;
+}
+
+.schedule-section {
+  margin-bottom: 20px;
+}
+
+.schedule-section:last-child {
+  margin-bottom: 0;
+}
+
+.schedule-day {
+  font-size: 14px;
+  color: #6b728080;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.schedule-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .schedule-cards {
+    grid-template-columns: 1fr;
+  }
+}

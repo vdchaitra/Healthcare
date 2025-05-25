@@ -1,0 +1,159 @@
+.anatomy-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  overflow: hidden;
+  height: 400px;
+}
+
+.anatomy-main {
+  height: 95%;
+  position: relative;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #3869ca15;
+}
+
+.anatomy-illustration {
+  position: relative;
+  width: 200px;
+  height: 350px;
+}
+
+.anatomy-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.health-indicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+}
+
+.heart-indicator {
+  top: 20%;
+  left: 95%;
+  background-color: #4338ca;
+  transform: translateX(-50%);
+}
+
+.leg-indicator {
+  bottom: 25%;
+  left: 10%;
+  background-color: #06b6d4;
+  transform: translateX(-50%);
+}
+
+.indicator-icon {
+  font-size: 14px;
+}
+
+.indicator-text {
+  font-size: 11px;
+}
+
+.expand-button {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+}
+
+.expand-button:hover {
+  background-color: #e5e7eb;
+}
+
+.health-status-panel {
+  width: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fafafa;
+}
+
+/* Dropdown Filter */
+.dashboard-filter-fil {
+  margin-top: auto;
+  margin-left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: fit-content;
+}
+
+.dashboard-filter:hover {
+  background-color: #f3f4f6;
+}
+
+.filter-arrow {
+  color: #6b7280;
+  
+}
+.status-tile {
+  background-color: #3869ca15; /* Light blue */
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.status-tile:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+@media (max-width: 768px) {
+  .anatomy-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .anatomy-main {
+    padding: 16px;
+  }
+
+  .anatomy-illustration {
+    width: 150px;
+    height: 250px;
+  }
+
+  .health-status-panel {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid #e2e8f0;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+}

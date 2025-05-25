@@ -1,0 +1,139 @@
+/* Sidebar container */
+.sidebar {
+  width: 224px;
+  height: 100vh;
+  background-color: #b3bbf437;
+  border-right: 1px solid #c8ddf947;
+  overflow-y: auto;
+}
+
+/* Inner content */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+
+.sidebar-flex{
+  display: flex;
+  justify-content: center;
+  padding: 25px 0px 20px 0px;
+}
+
+/* Navigation section */
+.nav-section {
+  margin-bottom: 32px;
+}
+
+.nav-section-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #9ca3af8f;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+/* Menu layout */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Menu item */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #6b728089;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  background-color: #d4e2ff;
+  color: #373377;;
+}
+
+.nav-item-active {
+  color: #3730a3;
+  background-color: #eef2ff;
+}
+
+/* Icon container */
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make sure SVG icons inherit text color */
+.nav-icon svg {
+  stroke: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+/* Label */
+.nav-label {
+  flex: 1;
+}
+
+/* Responsive (Mobile View) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .nav-item {
+    flex-direction: column;
+    min-width: 80px;
+    text-align: center;
+    gap: 4px;
+    padding: 8px 4px;
+  }
+
+  .nav-icon {
+    margin-bottom: 2px;
+  }
+
+  .nav-label {
+    font-size: 12px;
+  }
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+.header-logo{
+  font-size: 20px;
+  font-weight: 700;
+  color: #06b6d4;
+  margin: 0;
+}
+.header-color{
+  font-size: 20px;
+  font-weight: 700;
+  color: #373377;
+  margin: 0;
+}
