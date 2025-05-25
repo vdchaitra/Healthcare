@@ -18,4 +18,4 @@ A fully responsive, pixel-perfect static healthcare dashboard built with React, 
 
 ## 🔗 Live Demo
 
-[View Live Dashboard](https://your-live-site-link.vercel.app)
+[View Live Dashboard](https://healthcare-vert-two.vercel.app/)
